@@ -88,3 +88,34 @@ nav {
     flex-direction: column;
   }
 }
+
+.container2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.card{
+  padding: 20px;
+  margin: 50px;
+  display: block; 
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, -2);
+  border: 50px;
+}
+#card_imagen{
+  
+  margin-top: 40px;
+  margin-left: 0;
+  width: 100%
+}
+#card_title{}
+#card_body{}
+
+@media screen and (max-width: 768px) {
+
+}
