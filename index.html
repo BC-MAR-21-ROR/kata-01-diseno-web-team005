@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+  <link rel="stylesheet" href="css/Icons/style.css">
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -42,6 +43,35 @@
       </div>
 
     </div>
+    
+    <div class="container2">
+      <div class="card">
+        <div id="card_imagen">
+          <img src="images\illustration-grow-together.svg" alt="grow together ilustration">
+        </div>
+        <div id="card_title">
+          <h1>Grow Together</h1>
+        </div>
+        <div id="card_body">
+          <p>Generate meaningful discussions with your audience and build a strong, loyal community.
+            Think of the insightful conversations you miss out on with a feedback form.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div id="card_imagen">
+          <img src="images/illustration-flowing-conversation.svg" alt="Flowing conversation ilustration">
+        </div>
+        <div id="card_title">
+          <h1>Flowing Conversations</h1>
+        </div>
+        <div id="card_body">
+          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads
+            have just-in-time loading for a more natural flow.</p>
+        </div>
+      </div>
+    </div>
+
   </header>
 
 
@@ -49,15 +79,13 @@
 
 
 
-  Grow Together
+  
 
-  Generate meaningful discussions with your audience and build a strong, loyal community.
-  Think of the insightful conversations you miss out on with a feedback form.
+  
 
-  Flowing Conversations
+  
 
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads
-  have just-in-time loading for a more natural flow.
+  
 
   <section class="flex round-shadow section-card">
     <div class="section-card-text">
@@ -79,21 +107,43 @@
     <a class="btn btn-primary">Get Started For Free</a>
   </section>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua
-
-  +1-543-123-4567
-  example@huddle.com
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
+  <div class="footer">
+    <div class="flex-grid-footer">
+      <div class="col-5">
+        <img src="images/logo-bl.svg">
+        <div class="icon-1">
+          <img src="images/icon-location.svg">
+        </div>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h5>
+        <div class="icon-2">
+          <img src="images/icon-phone.svg">
+        </div>
+        <h5 class="flex-text-1">+1-543-123-4567</h5>
+        <div class="icon-3">
+          <img src="images/icon-email.svg">
+        </div>
+        <h5 class="flex-text-2">example@huddle.com</h5>
+      </div>
+      <div class="col-2">
+        <h5>About Us</h5>
+        <h5>What We Do</h5>
+        <h5>FAQ</h5>
+      </div>
+      <div class="col-2 sm-2">
+        <h5>Career</h5>
+        <h5>Blog</h5>
+        <h5>Contact Us</h5>
+      </div>
+      <div class="col-6">
+        <div class="block">
+          <a href=""><div><i class="icon icon-facebook"></i></div></a>
+          <a href=""><div><i class="icon icon-twitter"></i></div></a>
+          <a href=""><div><i class="icon icon-instagram"></i></div></a>
+        </div>
+        <h5>&copy; Copyright 2018 Huddle. All rights reserved.</h5>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <p class="attribution">
