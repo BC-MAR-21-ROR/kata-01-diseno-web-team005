@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-h1, h2{
+h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -29,7 +29,7 @@ img {
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   padding: 15px 60px;
 }
@@ -37,6 +37,11 @@ img {
 .btn-primary {
   background-color: hsl(322, 100%, 66%);
   color: #ffffff;
+  box-shadow: 0px 5px 10px -5px hsl(208deg 11% 55%)
+}
+
+.btn-primary:hover{
+  background-color: hsl(322, 100%, 78%);
 }
 
 .container {
@@ -73,6 +78,33 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+
+/*section-cards and floating-section styles*/
+.round-shadow{ /*shared to set shadow*/
+  border-radius: 10px;
+  padding: 1.6em;
+  box-shadow: 0px 0px 15px 0 hsl(208deg 11% 55% / 26%);
+}
+
+.section-card{ /*card users*/
+  width:88%;
+  margin: 3% 6%;
+}
+
+.section-card .section-card-text{ /*text of the users card*/
+  padding: 3em;
+}
+
+.floating-section{ /*floating section 'build your community'*/
+  flex-direction: column;
+  width: 50%;
+  margin: 3% 25%;
+  text-align: center;
+  transform: translateY(50%);
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2.6em;
 }
 
 /* Footer Desktop-Design */
@@ -174,6 +206,27 @@ nav {
 
   .flex {
     flex-direction: column;
+  }
+  /*section-cards and floating-section mobile styles*/
+  .section-card{ /*card users inverse elements and reduce margin*/ 
+    flex-direction: column-reverse;
+    width: 92%;
+    margin: 4%;
+   }
+
+  .section-card .section-card-text{ /*set new padding to text section card users*/
+    padding: 0;
+  }
+
+  .floating-section{ /*reduce margin to floating section*/
+    width: 92%; /*same as section-card*/
+    margin: 3% 4%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .floating-section h3{
+    font-size: 1em;
   }
 }
 
